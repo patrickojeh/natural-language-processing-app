@@ -1,4 +1,4 @@
-# Natural Language procesing App
+# Natural Language Procesing App
 
 ### Summary
 
