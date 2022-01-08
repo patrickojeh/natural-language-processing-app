@@ -2,7 +2,7 @@
 
 ### Summary
 
-**Natural Language Processing (NLP)** NLP is a subset of AI that provides computers ability to process or interact with natural human speech.
+**Natural Language Processing (NLP)** is a subset of AI that provides computers ability to process or interact with natural human speech.
 
 NLP is the ability of an application to understand the human language, written or oral.
 
