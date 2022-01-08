@@ -7,6 +7,11 @@ module.exports = {
   module: {
     rules: [
       {
+        exclude: /node_modules/,
+        test: /\.js$/,
+        loader: 'babel-loader'
+      },
+      {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       }
