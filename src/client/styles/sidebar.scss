@@ -1,0 +1,21 @@
+$orange: #f3631f;
+
+.sidebar {
+  order: 2;
+  padding: 32px;
+  &__logo {
+    font-family: vampiro one;
+    font-size: 2.5rem;
+    color: $orange;
+  }
+  &__footer {
+    bottom: 24px;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sidebar {
+    order: 2;
+  }
+}

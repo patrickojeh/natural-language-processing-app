@@ -1,0 +1,11 @@
+.main {
+  background: #f9efeb;
+  order: 1;
+  padding: 64px;
+}
+
+@media screen and (min-width: 992px) {
+  .sidebar {
+    order: 1;
+  }
+}
