@@ -1,11 +1,26 @@
 .main {
   background: #f9efeb;
+  display: flex;
   order: 1;
-  padding: 64px;
+  padding: 32px;
+  &__container {
+    align-self: center;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  &__description {
+    font-size: 14px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .sidebar {
-    order: 1;
+  .main {
+    order: 2;
+    padding: 64px;
+    &__description {
+      font-size: 16px;
+    }
   }
 }

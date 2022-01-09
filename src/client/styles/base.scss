@@ -1,9 +1,12 @@
+$orange: #f3631f;
+$white: #fff;
+
 body,
 html {
   color: #48403c;
   font-family: graphik;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.55;
   margin: 0;
   padding: 0;
 }
@@ -15,16 +18,46 @@ hr {
   border: none;
   border-top: 1px solid rgba(#48403c, 0.1);
   margin-bottom: 32px;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 main {
   display: grid;
   grid-template-columns: 1fr;
   min-height: 100vh;
 }
+form {
+  text-align: center;
+}
+input {
+  border: 2px solid transparent;
+  height: 56px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  padding: 0 32px;
+  width: -webkit-fill-available;
+  &:focus {
+    border-color: rgba($orange, 0.25);
+    outline: none;
+  }
+  &::placeholder {
+    color: rgba(#48403c, 0.25);
+  }
+}
+button {
+  background: $orange;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  padding: 16px 28px;
+  border-radius: 50px;
+}
 
 @media screen and (min-width: 992px) {
   main {
     grid-template-columns: 0.25fr 0.75fr;
+  }
+  input {
+    font-size: 16px;
+    margin-bottom: 24px;
   }
 }
