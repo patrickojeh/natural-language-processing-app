@@ -4,5 +4,10 @@ export function handleSubmit(event) {
   // get text that was put into the form field
   let url = document.getElementById('url').value;
 
-  console.log(url)
+  // validate url
+  if (Client.validateUrl(url)) {
+    console.log('worked')
+  } else {
+    // TODO: show error message.
+  }
 }
