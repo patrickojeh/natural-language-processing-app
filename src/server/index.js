@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require('express');
+const axios = require('axios');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -10,14 +11,15 @@ const app = express();
 
 // middlewares
 app.use(cors());
+app.use(express.static('dist'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.resolve('src/views/index.html'))
+  res.sendFile(path.resolve('src/client/views/index.html'))
 });
 
-app.post('api', (req, res) => {
+app.post('/api', (req, res) => {
   const data = {
     url: req.body.url,
     key: process.env.API_KEY,
