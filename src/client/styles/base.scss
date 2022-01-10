@@ -24,6 +24,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   min-height: 100vh;
+  transition: 0.25s ease-in all;
 }
 form {
   text-align: center;
@@ -31,6 +32,7 @@ form {
 input {
   background: #f1e5e1;
   border: 2px solid transparent;
+  color: #48403c;
   height: 56px;
   border-radius: 50px;
   margin-bottom: 16px;
@@ -45,11 +47,11 @@ input {
   }
 }
 button {
-  background: $orange;
+  background: linear-gradient(to right, $orange, #ff8800);
   border: none;
   color: $white;
   cursor: pointer;
-  padding: 16px 28px;
+  padding: 14px 28px 16px;
   border-radius: 50px;
   &:focus {
     outline: none;
@@ -61,7 +63,28 @@ button {
     grid-template-columns: 0.25fr 0.75fr;
   }
   input {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 24px;
   }
+}
+fieldset {
+  border: none;
+  border-top: 1px solid #e8ae6f;
+  margin: 0;
+  padding: 0;
+}
+legend {
+  background: linear-gradient(to right, $orange, #ff8800);
+  border-radius: 24px;
+  color: $white;
+  padding: 5px 14px 4px;
+}
+ul {
+  list-style-type: none;
+  padding: 12px 0 0 0;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

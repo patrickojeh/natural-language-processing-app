@@ -23,10 +23,13 @@ export function handleSubmit(event) {
     .then(res => {
       const {agreement, confidence, irony, model, subjectivity} = res;
       const resultContainer = document.getElementById('result');
-      console.log(res)
-      // const paragraph = document.createElement('p');
-      // paragraph.innerHTML = `Agreement: ${agreement} <br/> Confidence: ${confidence} <br/> Irony: ${irony} <br/> Model: ${model} <br/> Subjectivity: ${subjectivity}`
-      // formResultsContainer.appendChild(paragraph);
+      let listItem = '';
+      listItem += `<li><p>Agreement</p> <p>${agreement}</p></li>`;
+      listItem += `<li><p>Confidence</p> <p>${confidence}</p></li>`;
+      listItem += `<li><p>Irony</p> <p>${irony}</p></li>`;
+      listItem += `<li><p>Model</p> <p>${model}</p></li>`;
+      listItem += `<li><p>Subjectivity</p> <p>${subjectivity}</p></li>`;
+      resultContainer.innerHTML = listItem;
     });
   } else {
     // TODO: show error message.

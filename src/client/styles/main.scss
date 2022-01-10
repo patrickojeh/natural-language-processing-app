@@ -13,6 +13,12 @@
     margin-bottom: 32px;
     text-align: center;
   }
+  &__result {
+    margin-top: 60px;
+    p {
+      margin-bottom: 4px;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -20,7 +26,7 @@
     order: 2;
     padding: 64px;
     &__description {
-      font-size: 16px;
+      font-size: 15px;
     }
   }
 }
