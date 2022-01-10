@@ -22,6 +22,8 @@ export function handleSubmit(event) {
     })
     .then(res => {
       const {agreement, confidence, irony, model, subjectivity} = res;
+      const wrapper = document.querySelector('.main__result');
+      wrapper.classList.add('active');
       const resultContainer = document.getElementById('result');
       let listItem = '';
       listItem += `<li><p>Agreement</p> <p>${agreement}</p></li>`;
