@@ -29,6 +29,7 @@ form {
   text-align: center;
 }
 input {
+  background: #f1e5e1;
   border: 2px solid transparent;
   height: 56px;
   border-radius: 50px;
@@ -36,7 +37,7 @@ input {
   padding: 0 32px;
   width: -webkit-fill-available;
   &:focus {
-    border-color: rgba($orange, 0.25);
+    background: $white;
     outline: none;
   }
   &::placeholder {
