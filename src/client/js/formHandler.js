@@ -6,7 +6,7 @@ export function handleSubmit(event) {
 
   // validate url
   if (Client.validateUrl(url)) {
-    console.log('worked')
+
   } else {
     // TODO: show error message.
   }
