@@ -10,7 +10,7 @@ export function handleSubmit(event) {
 
     const formData = {url}
 
-    fetch('https://frosty-swirles-dbbbef.netlify.app/api', {
+    fetch('http://localhost:8080/api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
