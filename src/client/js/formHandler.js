@@ -10,7 +10,7 @@ export function handleSubmit(event) {
 
     const formData = {url}
 
-    fetch('http://localhost:8080/api', {
+    fetch('/api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
