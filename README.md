@@ -10,6 +10,9 @@ NLP is the ability of an application to understand the human language, written o
 
 Provide URL of an article or blog post to analyze text and detect their polarity, subjectivity, irony and emotional agreement using **MeaningCloud's Sentiment Analysis API**.
 
-### Instructions (to run)
+### Instructions (To run)
 
-`_`
+- Install dependencies - `npm i`
+- Start node server - `npm start`
+- To build for development - `npm run build-dev`
+- To build for Production - `npm run build-prod`
